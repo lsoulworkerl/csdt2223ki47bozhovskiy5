@@ -1,7 +1,6 @@
-Details about repo:
- Student: Bozhovskiy Vitaliy
- Name of repo: csdt2223ki47vitaliy5
+Repository: 
+ csdt2223ki47bozhovskiy5
 Task details:
- Initiate GIT repository 
+ Initializing GIT repository, creating branch, adding collaborator , creating pull request and merging it into develop branch.
 Student number:
-5 SPI tetris XML
+ 5 SPI tetris XML
