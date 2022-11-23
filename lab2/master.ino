@@ -48,7 +48,7 @@ void setup()
   
   	Serial.println("please, write number");
     delay(10000);
-  	if (Serial.available() > 0) {  //если есть доступные данные
+  	if (Serial.available() > 0) {  //check data
         keypressed = Serial.read();
     }
 
