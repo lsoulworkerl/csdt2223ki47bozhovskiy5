@@ -31,8 +31,8 @@ def parser(inp: int):
     options=webdriver.FirefoxOptions()
     )
 
-    email = "prosto2002vitalik@gmail.com"
-    password = "superanonim29"
+    email = ""
+    password = ""
 
     wait = WebDriverWait(driver, 500)
 
