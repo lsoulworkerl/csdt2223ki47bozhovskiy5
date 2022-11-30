@@ -1,0 +1,40 @@
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+  SE_NODE_OVERRIDE_MAX_SESSIONS: 'true'
+  SE_NODE_MAX_SESSIONS: '5'
+
+image: python:latest
+
+cache:
+  paths:
+    - .cache/pip
+    - venv/
+
+build:
+    stage: build
+    artifacts:
+        paths:
+            - output/
+        expire_in: 5 days
+    services:
+        - name: selenium/standalone-firefox:latest
+          alias: firefox
+    script:
+        - pip install virtualenv
+        - virtualenv venv
+        - source venv/bin/activate
+        - pip install -r requirements.txt
+        - mkdir -p output
+        - cd output
+        - pyinstaller -F /builds/csdt1/task/lab2.py
+        - cd ../
+        - python lab2.py > output/result.txt
+
+test:
+    stage: test
+    services:
+        - name: selenium/standalone-firefox:latest
+          alias: firefox
+    script:
+        - source venv/bin/activate
+        - python test.py
