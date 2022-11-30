@@ -26,8 +26,8 @@ def parser(input_data: str):
     options.binary_location = r"C:\\Program Files\\Mozilla Firefox\\firefox.exe"
     driver = webdriver.Firefox(executable_path=r"D:\\Projects\\University\\lab5\\lab\\parser\\firefox\\geckodriver.exe", options=options)
 
-    email = "prosto2002vitalik@gmail.com"
-    password = "superanonim29"
+    email = ""
+    password = ""
 
     wait = WebDriverWait(driver, 500)
 
