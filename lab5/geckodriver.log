@@ -1,0 +1,18 @@
+1669591018116	geckodriver	INFO	Listening on 127.0.0.1:64649
+1669591021158	mozrunner::runner	INFO	Running command: "C:\\\\Program Files\\\\Mozilla Firefox\\\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "64650" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\06613\\AppData\\Local\\Temp\\rust_mozprofileDbG7cY"
+*** You are running in headless mode.
+1669591021608	Marionette	INFO	Marionette enabled
+1669591021613	Marionette	INFO	Listening on port 64660
+WebDriver BiDi listening on ws://127.0.0.1:64650
+Read port: 64660
+1669591021837	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\06613\\AppData\\Local\\Temp\\rust_mozprofileDbG7cY\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64650/devtools/browser/330d4c15-0c15-41a1-be66-cb270e073970
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.tinkercad.com."
+JavaScript warning: https://tags.tiqcdn.com/utag/autodesk/oxygen/prod/utag.js, line 1063: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.autodesk.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.autodesk.com."
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+1669591070024	Marionette	INFO	Stopped listening on port 64660
